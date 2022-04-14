@@ -1,22 +1,22 @@
 {
-  "name": "@uniswap/default-token-list",
-  "version": "3.1.0",
-  "description": "◦ The Uniswap default token list",
-  "main": "build/uniswap-default.tokenlist.json",
+  "name": "@jediswap/default-token-list",
+  "version": "1.0.0",
+  "description": "◦ The Jediswap default token list",
+  "main": "build/jediswap-default.tokenlist.json",
   "scripts": {
     "test": "mocha",
-    "build": "rimraf build && mkdir -p build && node src/write.js > build/uniswap-default.tokenlist.json",
+    "build": "rimraf build && mkdir -p build && node src/write.js > build/jediswap-default.tokenlist.json",
     "prepublishOnly": "npm test && npm run build"
   },
   "files": [
-    "build/uniswap-default.tokenlist.json"
+    "build/jediswap-default.tokenlist.json"
   ],
   "repository": {
     "type": "git",
     "url": "git+https://github.com/Uniswap/default-token-list.git"
   },
   "keywords": [
-    "uniswap",
+    "jediswap",
     "default",
     "token",
     "list"
@@ -29,10 +29,12 @@
   "homepage": "https://github.com/Uniswap/default-token-list#readme",
   "devDependencies": {
     "@ethersproject/address": "^5.0.2",
+    "@jediswap/token-lists": "^1.0.0-beta.1",
     "@uniswap/token-lists": "^1.0.0-beta.8",
     "ajv": "^6.12.3",
     "chai": "^4.2.0",
     "mocha": "^8.0.1",
-    "rimraf": "^3.0.2"
+    "rimraf": "^3.0.2",
+    "starknet": "^3.9.0"
   }
 }
