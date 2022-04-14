@@ -32,7 +32,7 @@ jobs:
         uses: anantaramdas/ipfs-pinata-deploy-action@v1.6.3
         with:
           pin-name: JediSwap Default Token List ${{ needs.bump_version.outputs.new_tag }}
-          path: "build/jediswap-default.tokenlist.json"
+          path: "./build/jediswap-default.tokenlist.json"
           pinata-api-key: ${{ secrets.PINATA_API_KEY }}
           pinata-secret-api-key: ${{ secrets.PINATA_API_SECRET_KEY }}
 
