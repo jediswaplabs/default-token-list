@@ -39,9 +39,10 @@ jobs:
           pinata-api-key: ${{ secrets.PINATA_API_KEY }}
           pinata-secret-api-key: ${{ secrets.PINATA_API_SECRET_KEY }}
 
-      - name: Update DNS with new IPFS hash
-        # run: echo "dnslink=/ipfs/${{ steps.upload.outputs.hash }}"
+      - name: Check Concatenation
+        run: echo "dnslink=/ipfs/${{ steps.upload.outputs.hash }}"
 
+      - name: Update DNS with new IPFS hash
         uses: Roosterfish/aws-route53-record-set-action@master
         with:
           aws_access_key_id: ${{ secrets.AWS_ACCESS_KEY_ID }}
