@@ -16,7 +16,7 @@ Token Address:
 Token Name (from contract): 
 Token Decimals (from contract): 
 Token Symbol (from contract): 
-Uniswap V2 Pair Address of Token: 
+JediSwap Pair Address of Token (if any): 
 
-Link to the official homepage of token:
-Link to CoinMarketCap or CoinGecko page of token: 
+Link to the official homepage of token (if any):
+Link to CoinMarketCap or CoinGecko page of token (if any): 
