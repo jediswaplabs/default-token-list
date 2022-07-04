@@ -13,7 +13,7 @@
   ],
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/Uniswap/default-token-list.git"
+    "url": "git+https://github.com/jediswaplabs/default-token-list.git"
   },
   "keywords": [
     "jediswap",
@@ -21,16 +21,14 @@
     "token",
     "list"
   ],
-  "author": "Moody Salem",
+  "author": "Dhruv Kelawala",
   "license": "GPL-3.0-or-later",
   "bugs": {
     "url": "https://github.com/Uniswap/default-token-list/issues"
   },
   "homepage": "https://github.com/Uniswap/default-token-list#readme",
   "devDependencies": {
-    "@ethersproject/address": "^5.0.2",
     "@jediswap/token-lists": "^1.0.0-beta.1",
-    "@uniswap/token-lists": "^1.0.0-beta.8",
     "ajv": "^6.12.3",
     "chai": "^4.2.0",
     "mocha": "^8.0.1",
