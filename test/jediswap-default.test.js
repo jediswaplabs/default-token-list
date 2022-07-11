@@ -3,17 +3,13 @@ const schema = require("@jediswap/token-lists/src/tokenlist.schema.json");
 const { expect } = require("chai");
 const Ajv = require("ajv");
 const buildList = require("../src/buildList");
-const { validateAndParseAddress } = require("starknet");
+const { getChecksumAddress } = require("starknet");
 
 const ajv = new Ajv({ allErrors: true, format: "full", verbose: true });
 const validator = ajv.compile(schema);
 
 describe("buildList", () => {
   const defaultTokenList = buildList();
-  // console.log(
-  //   "🚀 ~ file: uniswap-default.test.js ~ line 13 ~ describe ~ defaultTokenList",
-  //   defaultTokenList
-  // );
 
   it("validates", () => {
     expect(validator(defaultTokenList)).to.equal(true);
@@ -51,9 +47,7 @@ describe("buildList", () => {
 
   it("all addresses are valid and checksummed", () => {
     for (let token of defaultTokenList.tokens) {
-      // const isAddressValid = ;
-
-      expect(() => validateAndParseAddress(token.address)).to.not.throw();
+      expect(getChecksumAddress(token.address)).to.eq(token.address);
     }
   });
 

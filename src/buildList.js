@@ -1,7 +1,7 @@
 const { version } = require("../package.json");
 const mainnet = require("./tokens/mainnet.json");
 const goerli = require("./tokens/goerli.json");
-const { validateAndParseAddress } = require("starknet");
+const { getChecksumAddress } = require("starknet");
 
 module.exports = function buildList() {
   const parsed = version.split(".");
@@ -20,7 +20,7 @@ module.exports = function buildList() {
       // parse address
       .map(token => ({
         ...token,
-        address: validateAndParseAddress(token.address)
+        address: getChecksumAddress(token.address)
       }))
       // sort them by symbol for easy readability
       .sort((t1, t2) => {
