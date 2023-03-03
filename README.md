@@ -10,7 +10,9 @@ This NPM module and GitHub repo contains the default token list used in the Unis
 To request that we add a token to the list,
 [file an issue](https://github.com/jediswaplabs/default-token-list/issues/new?assignees=&labels=token+request&template=token-request.md&title=Add+%7BTOKEN_SYMBOL%7D%3A+%7BTOKEN_NAME%7D).
 
+## Dev
 
+Don't forget to run `yarn build` and add the `build` folder to your commit before you push your changes.
 
 ### Disclaimer
 
