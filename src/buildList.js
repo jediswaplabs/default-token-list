@@ -1,6 +1,6 @@
 const { version } = require("../package.json");
 const mainnet = require("./tokens/mainnet.json");
-const testnet = require("./tokens/testnet.json");
+const goerli = require("./tokens/goerli.json");
 const { getChecksumAddress } = require("starknet");
 
 module.exports = function buildList() {
@@ -11,16 +11,16 @@ module.exports = function buildList() {
     version: {
       major: +parsed[0],
       minor: +parsed[1],
-      patch: +parsed[2],
+      patch: +parsed[2]
     },
     tags: {},
     logoURI: "ipfs://QmNa8mQkrNKp1WEEeGjFezDmDeodkWRevGFN8JCV7b4Xir",
     keywords: ["jediswap", "default"],
-    tokens: [...mainnet, ...testnet]
+    tokens: [...mainnet, ...goerli]
       // parse address
-      .map((token) => ({
+      .map(token => ({
         ...token,
-        address: getChecksumAddress(token.address),
+        address: getChecksumAddress(token.address)
       }))
       // sort them by symbol for easy readability
       .sort((t1, t2) => {
@@ -28,6 +28,6 @@ module.exports = function buildList() {
           return t1.symbol.toLowerCase() < t2.symbol.toLowerCase() ? -1 : 1;
         }
         return t1.chainId < t2.chainId ? -1 : 1;
-      }),
+      })
   };
 };
