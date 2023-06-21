@@ -5,7 +5,7 @@ const goerli = require("./tokens/goerli.json");
 const { getChecksumAddress } = require("starknet");
 
 module.exports = function buildList() {
-  const parsed = ciVersion ? ciVersion.split(".") : version.split(".");
+  const parsed = ciVersion ? ciVersion.match(/(\d+).(\d+).(\d+)/)?.split(".") : version.split(".");
   return {
     name: "Jediswap Labs List",
     timestamp: new Date().toISOString(),
