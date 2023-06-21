@@ -72,13 +72,6 @@ jobs:
       name: mainnet
 
     steps:
-      - name: 'Cleanup build folder'
-        run: |
-          ls -la ./
-          rm -rf ./* || true
-          rm -rf ./.??* || true
-          ls -la ./
-
       - name: Checkout
         uses: actions/checkout@v3
 
@@ -93,7 +86,13 @@ jobs:
       - name: Tests pass
         run: yarn test
 
+      - name: Get package info
+        id: package
+        uses: codex-team/action-nodejs-package-info@v1.1
+
       - name: Build the app
+        env:
+          VERSION: ${{ steps.package.outputs.version }}
         run: yarn build
 
 #      - name: Publish to NPM
