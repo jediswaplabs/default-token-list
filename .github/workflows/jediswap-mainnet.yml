@@ -94,10 +94,10 @@ jobs:
           VERSION: ${{ needs.bump.outputs.newTag }}
         run: yarn build
 
-      - name: Publish to NPM
-        uses: JS-DevTools/npm-publish@18351461ae08dde235c0ccee0633ec905f0b9a52
-        with:
-          token: ${{ secrets.NPM_TOKEN }}
+#       - name: Publish to NPM
+#         uses: JS-DevTools/npm-publish@18351461ae08dde235c0ccee0633ec905f0b9a52
+#         with:
+#           token: ${{ secrets.NPM_TOKEN }}
 
       - name: Configure AWS
         uses: aws-actions/configure-aws-credentials@v1
