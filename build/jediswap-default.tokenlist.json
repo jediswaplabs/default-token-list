@@ -1,10 +1,10 @@
 {
   "name": "Jediswap Labs List",
-  "timestamp": "2023-03-03T08:11:10.905Z",
+  "timestamp": "2023-06-21T17:42:32.605Z",
   "version": {
     "major": 2,
     "minor": 0,
-    "patch": 0
+    "patch": 8
   },
   "tags": {},
   "logoURI": "ipfs://QmNa8mQkrNKp1WEEeGjFezDmDeodkWRevGFN8JCV7b4Xir",
@@ -20,6 +20,14 @@
       "decimals": 18,
       "chainId": 1,
       "logoURI": "https://raw.githubusercontent.com/trustwallet/assets/master/blockchains/ethereum/assets/0x6B175474E89094C44Da98b954EedeAC495271d0F/logo.png"
+    },
+    {
+      "name": "Lords",
+      "address": "0x03Dbf41401c6e7F1950D607f25eF11c740DE5B6AA834FC014FE49980B32F420A",
+      "symbol": "LORDS",
+      "decimals": 6,
+      "chainId": 1,
+      "logoURI": "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAADIAAAAyCAQAAAC0NkA6AAAABGdBTUEAALGPC/xhBQAAACBjSFJNAAB6JgAAgIQAAPoAAACA6AAAdTAAAOpgAAA6mAAAF3CculE8AAAAAmJLR0QA/4ePzL8AAAAJcEhZcwAAFiUAABYlAUlSJPAAAAAHdElNRQfmARALNwdjhvZmAAAEF0lEQVRYw93Ya4jUVRjH8c/Mzozsem9r1M3KUlETxQ0lswuYQSFGN1HzAqVURAUhRb7oVSBkRUQEJRFlQRBFL7QyupikgZQGWpLsmqmLl3Y13fWyujszpxczs7u6s/+99qbnvJjzh9853/M85/k/5/yH/4vFeqiLGyEtbYRyQbNT6tVrFAYGkjLJbW51oypDpcSR1aLREb/Z7icHZPrj5zAP+tQxocuWddgGd6voGyDlXt9ojgC0tzM+N1dZbxE3WK+pR4BiO2Gd0b1BzLOzV4Bi22JmzwBxyxzpEyIIatzTPSLmESf7jAiCOgu6gzygvl+IIPjL7VGIm+zvNyIIdhrfFeIKmwcEEQQbSr85Mc/JDBik2fJSkMkORA0bFcYHQUiH0UEQqkI6GrPLmPaELf4+6vrojFgNFhWW+IwV0Sk0w6LLIeMsjB6TUimGUdJgtFT0gLjlrsx3i/VmiaVdV+ThHnaXeUa62UpTpdxpqYtOqhNR6yv9bB8kwCDz23wqYRlZY1VaU3heh4ykkdG+DDLfRrki5FrVUepzjqrUqsWbjmKOJYLTvpeNxsxWqaH4cJ+WqEyZFmrDt+HjcDJMCYKwKjSHDaEhvBqS0RnWaHb7xk+V7Ho5SavFPKVWrCBPCj7wmpXmRHsy1KQiJBadvBPd4101UkJhm2PIes9xi6O2sm3mOMoKWdmFTZfwHWKCnHb3T/jRLEOifRlV1CeilWOc14D4JZCAQ0Ya3F3AYsVwRZ7OF5RJIi5XCFcRVy7T3UUlUYTktEbpalWYVMKTMjMc0hQNuSjk9RmNUbrdDlsmKdZh44NW1W7xtYvRkMYiJOtYlK7BeguskLgkXFd7yTGf6caO5mMG+6OVH5lpnSaZNk9SXjbMY+qiB2bzM+ez8XfNnRVTikXUWc/7ULrDnqS0etxXbdqxyktBTqlph+wrtaSZHW43/1hjo3jBkzLnPeuLtgpc4cnSxbLWwXbIcTs6Kw5a3OEtbS3cWPMWnO6gnGusE6UgW/PJlyjEbpMll59CdaZ72ztOygnSHepUmcEWaNIiJ2aaV3yppTOiyeZ8J9HG3HP5FfOUXaZa65ysrKSz9hUStsFe95uLmIQqw/1Ryo/tduU77afh09649M2PGVEoikFOTk5wTg6DVYhLSSqTkBB36JLwgQtWdM7wtB0DdiEKgk2lK+JDzg4Yot4dStogb8kNCCLjxa4PmipbBgTyieEibLrd/UZsNU43NtuefiG2mdwdAqpt6yMgZ5MJPUHAdd53odeIM153VU8RUGGVvb3y4RcLoy5WXdl4a/3ZA0DWXi+o6j2gaBOt9kOXn6o5f9vsCddET9KTP3CGmGyWahOkDZVEiybH1fjVTrWlDrzeQ4pWbogKKVx03lkX+h6g/8D+BeTCpclrcHp/AAAAJXRFWHRkYXRlOmNyZWF0ZQAyMDIyLTAxLTE2VDExOjU1OjA3KzAwOjAwM1ns9gAAACV0RVh0ZGF0ZTptb2RpZnkAMjAyMi0wMS0xNlQxMTo1NTowNyswMDowMEIEVEoAAAAASUVORK5CYII="
     },
     {
       "name": "USDCoin",
@@ -52,6 +60,14 @@
       "decimals": 18,
       "chainId": 5,
       "logoURI": "https://raw.githubusercontent.com/trustwallet/assets/master/blockchains/ethereum/assets/0x6B175474E89094C44Da98b954EedeAC495271d0F/logo.png"
+    },
+    {
+      "name": "Lords",
+      "address": "0x03Dbf41401c6e7F1950D607f25eF11c740DE5B6AA834FC014FE49980B32F420A",
+      "symbol": "LORDS",
+      "decimals": 6,
+      "chainId": 5,
+      "logoURI": "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAADIAAAAyCAQAAAC0NkA6AAAABGdBTUEAALGPC/xhBQAAACBjSFJNAAB6JgAAgIQAAPoAAACA6AAAdTAAAOpgAAA6mAAAF3CculE8AAAAAmJLR0QA/4ePzL8AAAAJcEhZcwAAFiUAABYlAUlSJPAAAAAHdElNRQfmARALNwdjhvZmAAAEF0lEQVRYw93Ya4jUVRjH8c/Mzozsem9r1M3KUlETxQ0lswuYQSFGN1HzAqVURAUhRb7oVSBkRUQEJRFlQRBFL7QyupikgZQGWpLsmqmLl3Y13fWyujszpxczs7u6s/+99qbnvJjzh9853/M85/k/5/yH/4vFeqiLGyEtbYRyQbNT6tVrFAYGkjLJbW51oypDpcSR1aLREb/Z7icHZPrj5zAP+tQxocuWddgGd6voGyDlXt9ojgC0tzM+N1dZbxE3WK+pR4BiO2Gd0b1BzLOzV4Bi22JmzwBxyxzpEyIIatzTPSLmESf7jAiCOgu6gzygvl+IIPjL7VGIm+zvNyIIdhrfFeIKmwcEEQQbSr85Mc/JDBik2fJSkMkORA0bFcYHQUiH0UEQqkI6GrPLmPaELf4+6vrojFgNFhWW+IwV0Sk0w6LLIeMsjB6TUimGUdJgtFT0gLjlrsx3i/VmiaVdV+ThHnaXeUa62UpTpdxpqYtOqhNR6yv9bB8kwCDz23wqYRlZY1VaU3heh4ykkdG+DDLfRrki5FrVUepzjqrUqsWbjmKOJYLTvpeNxsxWqaH4cJ+WqEyZFmrDt+HjcDJMCYKwKjSHDaEhvBqS0RnWaHb7xk+V7Ho5SavFPKVWrCBPCj7wmpXmRHsy1KQiJBadvBPd4101UkJhm2PIes9xi6O2sm3mOMoKWdmFTZfwHWKCnHb3T/jRLEOifRlV1CeilWOc14D4JZCAQ0Ya3F3AYsVwRZ7OF5RJIi5XCFcRVy7T3UUlUYTktEbpalWYVMKTMjMc0hQNuSjk9RmNUbrdDlsmKdZh44NW1W7xtYvRkMYiJOtYlK7BeguskLgkXFd7yTGf6caO5mMG+6OVH5lpnSaZNk9SXjbMY+qiB2bzM+ez8XfNnRVTikXUWc/7ULrDnqS0etxXbdqxyktBTqlph+wrtaSZHW43/1hjo3jBkzLnPeuLtgpc4cnSxbLWwXbIcTs6Kw5a3OEtbS3cWPMWnO6gnGusE6UgW/PJlyjEbpMll59CdaZ72ztOygnSHepUmcEWaNIiJ2aaV3yppTOiyeZ8J9HG3HP5FfOUXaZa65ysrKSz9hUStsFe95uLmIQqw/1Ryo/tduU77afh09649M2PGVEoikFOTk5wTg6DVYhLSSqTkBB36JLwgQtWdM7wtB0DdiEKgk2lK+JDzg4Yot4dStogb8kNCCLjxa4PmipbBgTyieEibLrd/UZsNU43NtuefiG2mdwdAqpt6yMgZ5MJPUHAdd53odeIM153VU8RUGGVvb3y4RcLoy5WXdl4a/3ZA0DWXi+o6j2gaBOt9kOXn6o5f9vsCddET9KTP3CGmGyWahOkDZVEiybH1fjVTrWlDrzeQ4pWbogKKVx03lkX+h6g/8D+BeTCpclrcHp/AAAAJXRFWHRkYXRlOmNyZWF0ZQAyMDIyLTAxLTE2VDExOjU1OjA3KzAwOjAwM1ns9gAAACV0RVh0ZGF0ZTptb2RpZnkAMjAyMi0wMS0xNlQxMTo1NTowNyswMDowMEIEVEoAAAAASUVORK5CYII="
     },
     {
       "name": "USDCoin",
