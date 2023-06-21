@@ -1,10 +1,11 @@
+const ciVersion = process.env.VERSION;
 const { version } = require("../package.json");
 const mainnet = require("./tokens/mainnet.json");
 const goerli = require("./tokens/goerli.json");
 const { getChecksumAddress } = require("starknet");
 
 module.exports = function buildList() {
-  const parsed = version.split(".");
+  const parsed = ciVersion ? ciVersion.split(".") : version.split(".");
   return {
     name: "Jediswap Labs List",
     timestamp: new Date().toISOString(),
