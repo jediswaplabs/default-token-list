@@ -15,6 +15,8 @@ on:
 jobs:
   bump:
     runs-on: ubuntu-latest
+    outputs:
+      newTag: ${{ steps.version-bump.outputs.newTag }}
     steps:
       - name: Checkout
         uses: actions/checkout@v3
@@ -68,7 +70,7 @@ jobs:
 
   build:
     runs-on: ubuntu-latest
-    needs: [cleanup]
+    needs: [bump, cleanup]
     environment:
       name: mainnet
 
@@ -93,7 +95,7 @@ jobs:
 
       - name: Build the app
         env:
-          VERSION: ${{ steps.version-bump.outputs.newTag }}
+          VERSION: ${{ needs.bump.outputs.newTag }}
         run: yarn build
 
 #      - name: Publish to NPM
