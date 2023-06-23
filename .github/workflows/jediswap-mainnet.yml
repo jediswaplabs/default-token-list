@@ -40,9 +40,52 @@ jobs:
           commit-message: 'CI: bumps version to {{version}}'
           bump-policy: 'last-commit'
 
-  cleanup:
+  build:
     runs-on: ubuntu-latest
     needs: [bump]
+    environment:
+      name: mainnet
+
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v3
+
+      - uses: actions/setup-node@v3
+        with:
+          node-version: 16
+          cache: 'yarn'
+
+      - name: Install dependencies
+        run: yarn install --immutable
+
+      - name: Tests pass
+        run: yarn test
+
+      - name: Build the app
+        env:
+          VERSION: ${{ needs.bump.outputs.newTag }}
+        run: yarn build
+
+      - name: Configure AWS
+        uses: aws-actions/configure-aws-credentials@v1
+        with:
+          aws-access-key-id: ${{ secrets.AWS_ACCESS_KEY_ID }}
+          aws-secret-access-key: ${{ secrets.AWS_SECRET_ACCESS_KEY }}
+          aws-region: us-east-1
+
+      - name: Deploy app build to S3 bucket
+        run: aws s3 sync ./build/ s3://$BUCKET_NAME/tokens-list
+        env:
+          BUCKET_NAME: ${{ secrets.AWS_S3_BUCKET_NAME }}
+
+      - name: Run Cache Invalidation
+        run: aws cloudfront create-invalidation --distribution-id $CDN_DISTRIBUTION_ID --paths /\*
+        env:
+          CDN_DISTRIBUTION_ID: ${{ secrets.AWS_CDN_DISTRIBUTION_ID }}
+
+  cleanup:
+    runs-on: ubuntu-latest
+    needs: [build]
     steps:
       - name: Check out code
         uses: actions/checkout@v3
@@ -68,9 +111,9 @@ jobs:
         env:
           GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
 
-  build:
+  publish:
     runs-on: ubuntu-latest
-    needs: [bump, cleanup]
+    needs: [ cleanup ]
     environment:
       name: mainnet
 
@@ -86,32 +129,7 @@ jobs:
       - name: Install dependencies
         run: yarn install --immutable
 
-      - name: Tests pass
-        run: yarn test
-
-      - name: Build the app
-        env:
-          VERSION: ${{ needs.bump.outputs.newTag }}
-        run: yarn build
-
-#       - name: Publish to NPM
-#         uses: JS-DevTools/npm-publish@18351461ae08dde235c0ccee0633ec905f0b9a52
-#         with:
-#           token: ${{ secrets.NPM_TOKEN }}
-
-      - name: Configure AWS
-        uses: aws-actions/configure-aws-credentials@v1
+      - name: Publish to NPM
+        uses: JS-DevTools/npm-publish@18351461ae08dde235c0ccee0633ec905f0b9a52
         with:
-          aws-access-key-id: ${{ secrets.AWS_ACCESS_KEY_ID }}
-          aws-secret-access-key: ${{ secrets.AWS_SECRET_ACCESS_KEY }}
-          aws-region: us-east-1
-
-      - name: Deploy app build to S3 bucket
-        run: aws s3 sync ./build/ s3://$BUCKET_NAME/tokens-list
-        env:
-          BUCKET_NAME: ${{ secrets.AWS_S3_BUCKET_NAME }}
-
-      - name: Run Cache Invalidation
-        run: aws cloudfront create-invalidation --distribution-id $CDN_DISTRIBUTION_ID --paths /\*
-        env:
-          CDN_DISTRIBUTION_ID: ${{ secrets.AWS_CDN_DISTRIBUTION_ID }}
+          token: ${{ secrets.NPM_TOKEN }}
