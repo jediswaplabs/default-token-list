@@ -83,53 +83,25 @@ jobs:
         env:
           CDN_DISTRIBUTION_ID: ${{ secrets.AWS_CDN_DISTRIBUTION_ID }}
 
-  cleanup:
-    runs-on: ubuntu-latest
-    needs: [build]
-    steps:
-      - name: Check out code
-        uses: actions/checkout@v3
-
-      - name: Cleanup
-        run: |
-          gh extension install actions/gh-actions-cache
-          
-          REPO=${{ github.repository }}
-          BRANCH="refs/pull/${{ github.event.pull_request.number }}/merge"
-
-          echo "Fetching list of cache key"
-          cacheKeysForPR=$(gh actions-cache list -R $REPO -B $BRANCH | cut -f 1 )
-
-          ## Setting this to not fail the workflow while deleting cache keys. 
-          set +e
-          echo "Deleting caches..."
-          for cacheKey in $cacheKeysForPR
-          do
-              gh actions-cache delete $cacheKey -R $REPO -B $BRANCH --confirm
-          done
-          echo "Done"
-        env:
-          GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
-
-  publish:
-    runs-on: ubuntu-latest
-    needs: [ cleanup ]
-    environment:
-      name: mainnet
-
-    steps:
-      - name: Checkout
-        uses: actions/checkout@v3
-
-      - uses: actions/setup-node@v3
-        with:
-          node-version: 16
-          cache: 'yarn'
-
-      - name: Install dependencies
-        run: yarn install --immutable
-
-      - name: Publish to NPM
-        uses: JS-DevTools/npm-publish@18351461ae08dde235c0ccee0633ec905f0b9a52
-        with:
-          token: ${{ secrets.NPM_TOKEN }}
+# TODO: there's a cache issue, JS-DevTools takes the previous commit, not the latest one
+#  publish:
+#    runs-on: ubuntu-latest
+#    environment:
+#      name: mainnet
+#
+#    steps:
+#      - name: Checkout
+#        uses: actions/checkout@v3
+#
+#      - uses: actions/setup-node@v3
+#        with:
+#          node-version: 16
+#          cache: 'yarn'
+#
+#      - name: Install dependencies
+#        run: yarn install --immutable
+#
+#      - name: Publish to NPM
+#        uses: JS-DevTools/npm-publish@18351461ae08dde235c0ccee0633ec905f0b9a52
+#        with:
+#          token: ${{ secrets.NPM_TOKEN }}
