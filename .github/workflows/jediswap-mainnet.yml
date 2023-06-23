@@ -83,15 +83,29 @@ jobs:
         env:
           CDN_DISTRIBUTION_ID: ${{ secrets.AWS_CDN_DISTRIBUTION_ID }}
 
-# TODO: do not need it for now
-#      - name: Pin to IPFS
-#        id: upload
-#        uses: anantaramdas/ipfs-pinata-deploy-action@v1.6.3
-#        with:
-#          pin-name: JediSwap Default Token List ${{ needs.bump.outputs.newTag }}
-#          path: "./build/jediswap-default.tokenlist.json"
-#          pinata-api-key: ${{ secrets.PINATA_API_KEY }}
-#          pinata-secret-api-key: ${{ secrets.PINATA_API_SECRET_KEY }}
+      - name: Pin to IPFS
+        id: upload
+        uses: anantaramdas/ipfs-pinata-deploy-action@v1.6.3
+        with:
+          pin-name: JediSwap Default Token List ${{ needs.bump.outputs.newTag }}
+          path: "./build/jediswap-default.tokenlist.json"
+          pinata-api-key: ${{ secrets.PINATA_API_KEY }}
+          pinata-secret-api-key: ${{ secrets.PINATA_API_SECRET_KEY }}
+
+      - name: Check Concatenation
+        run: echo "dnslink=/ipfs/${{ steps.upload.outputs.hash }}"
+
+      - name: Update DNS with new IPFS hash
+        uses: Roosterfish/aws-route53-record-set-action@master
+        with:
+          aws_access_key_id: ${{ secrets.AWS_ACCESS_KEY_ID }}
+          aws_secret_access_key: ${{ secrets.AWS_SECRET_ACCESS_KEY }}
+          aws_route53_hosted_zone_id: ${{ secrets.AWS_ROUTE53_HOSTED_ZONE_ID }}
+          aws_route53_rr_action: "UPSERT"
+          aws_route53_rr_name: "_dnslink.tokens.jediswap.xyz"
+          aws_route53_rr_type: "TXT"
+          aws_route53_rr_ttl: "300"
+          aws_route53_rr_value: '"dnslink=/ipfs/${{ steps.upload.outputs.hash }}"'
 
 # TODO: there's a cache issue, JS-DevTools takes the previous commit, not the latest one
 #  publish:
