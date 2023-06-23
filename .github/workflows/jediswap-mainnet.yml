@@ -17,6 +17,9 @@ jobs:
     runs-on: ubuntu-latest
     outputs:
       newTag: ${{ steps.version-bump.outputs.newTag }}
+    environment:
+      name: mainnet
+      
     steps:
       - name: Checkout
         uses: actions/checkout@v3
