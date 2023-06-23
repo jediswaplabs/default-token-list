@@ -83,14 +83,15 @@ jobs:
         env:
           CDN_DISTRIBUTION_ID: ${{ secrets.AWS_CDN_DISTRIBUTION_ID }}
 
-      - name: Pin to IPFS
-        id: upload
-        uses: anantaramdas/ipfs-pinata-deploy-action@v1.6.3
-        with:
-          pin-name: JediSwap Default Token List ${{ needs.bump.outputs.newTag }}
-          path: "./build/jediswap-default.tokenlist.json"
-          pinata-api-key: ${{ secrets.PINATA_API_KEY }}
-          pinata-secret-api-key: ${{ secrets.PINATA_API_SECRET_KEY }}
+# TODO: do not need it for now
+#      - name: Pin to IPFS
+#        id: upload
+#        uses: anantaramdas/ipfs-pinata-deploy-action@v1.6.3
+#        with:
+#          pin-name: JediSwap Default Token List ${{ needs.bump.outputs.newTag }}
+#          path: "./build/jediswap-default.tokenlist.json"
+#          pinata-api-key: ${{ secrets.PINATA_API_KEY }}
+#          pinata-secret-api-key: ${{ secrets.PINATA_API_SECRET_KEY }}
 
 # TODO: there's a cache issue, JS-DevTools takes the previous commit, not the latest one
 #  publish:
