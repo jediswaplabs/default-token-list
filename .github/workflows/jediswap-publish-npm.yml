@@ -1,0 +1,24 @@
+name: Publish to NPM
+
+jobs:
+  publish:
+    runs-on: ubuntu-latest
+    environment:
+      name: mainnet
+
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v3
+
+      - uses: actions/setup-node@v3
+        with:
+          node-version: 16
+          cache: 'yarn'
+
+      - name: Install dependencies
+        run: yarn install --immutable
+
+      - name: Publish to NPM
+        uses: JS-DevTools/npm-publish@18351461ae08dde235c0ccee0633ec905f0b9a52
+        with:
+          token: ${{ secrets.NPM_TOKEN }}
