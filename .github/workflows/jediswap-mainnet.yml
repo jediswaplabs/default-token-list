@@ -15,6 +15,7 @@ on:
 jobs:
   bump:
     runs-on: ubuntu-latest
+    runs-name: 'Bump version'
     outputs:
       newTag: ${{ steps.version-bump.outputs.newTag }}
     environment:
@@ -45,6 +46,7 @@ jobs:
 
   aws:
     runs-on: ubuntu-latest
+    runs-name: 'Publish to AWS'
     needs: [bump]
     environment:
       name: mainnet
@@ -88,6 +90,7 @@ jobs:
 
   ipfs:
     runs-on: ubuntu-latest
+    runs-name: 'Publish to IPFS'
     needs: [bump]
     environment:
       name: mainnet
