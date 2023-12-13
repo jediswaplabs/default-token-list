@@ -54,5 +54,13 @@
     "decimals": 18,
     "chainId": "0x534e5f4d41494e",
     "logoURI": "https://raw.githubusercontent.com/trustwallet/assets/master/blockchains/ethereum/assets/0x5f98805A4E8be255a32880FDeC7F6728C6568bA0/logo.png"
+  },
+  {
+    "name": "Akamaru",
+    "address": "0x0137dfca7d96cdd526d13a63176454f35c691f55837497448fad352643cfe4d4",
+    "symbol": "AKU",
+    "decimals": 18,
+    "chainId": "0x534e5f4d41494e",
+    "logoURI": "https://www.akamarutoken.com/logo.png"
   }
 ]
