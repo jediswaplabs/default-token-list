@@ -8,8 +8,16 @@
     "logoURI": "https://raw.githubusercontent.com/trustwallet/assets/master/blockchains/ethereum/assets/0x2260FAC5E5542a773Aa44fBCfeDf7C193bc2C599/logo.png"
   },
   {
-    "name": "Dai Stablecoin",
+    "name": "Dai Stablecoin (old)",
     "address": "0x00da114221cb83fa859dbdb4c44beeaa0bb37c7537ad5ae66fe5e0efd20e6eb3",
+    "symbol": "DAIv0",
+    "decimals": 18,
+    "chainId": "0x534e5f4d41494e",
+    "logoURI": "https://raw.githubusercontent.com/trustwallet/assets/master/blockchains/ethereum/assets/0x6B175474E89094C44Da98b954EedeAC495271d0F/logo.png"
+  },
+  {
+    "name": "Dai Stablecoin",
+    "address": "0x05574eb6b8789a91466f902c380d978e472db68170ff82a5b650b95a58ddf4ad",
     "symbol": "DAI",
     "decimals": 18,
     "chainId": "0x534e5f4d41494e",
