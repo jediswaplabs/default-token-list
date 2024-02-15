@@ -5,7 +5,7 @@
     "symbol": "WBTC",
     "decimals": 8,
     "chainId": "0x534e5f4d41494e",
-    "logoURI": "https://raw.githubusercontent.com/trustwallet/assets/master/blockchains/ethereum/assets/0x2260FAC5E5542a773Aa44fBCfeDf7C193bc2C599/logo.png"
+    "logoURI": "https://static.jediswap.xyz/tokens-list/assets/WBTC.png"
   },
   {
     "name": "Dai Stablecoin (old)",
@@ -13,7 +13,7 @@
     "symbol": "DAIv0",
     "decimals": 18,
     "chainId": "0x534e5f4d41494e",
-    "logoURI": "https://raw.githubusercontent.com/trustwallet/assets/master/blockchains/ethereum/assets/0x6B175474E89094C44Da98b954EedeAC495271d0F/logo.png"
+    "logoURI": "https://static.jediswap.xyz/tokens-list/assets/DAI.png"
   },
   {
     "name": "Dai Stablecoin",
@@ -21,7 +21,7 @@
     "symbol": "DAI",
     "decimals": 18,
     "chainId": "0x534e5f4d41494e",
-    "logoURI": "https://raw.githubusercontent.com/trustwallet/assets/master/blockchains/ethereum/assets/0x6B175474E89094C44Da98b954EedeAC495271d0F/logo.png"
+    "logoURI": "https://static.jediswap.xyz/tokens-list/assets/DAI.png"
   },
   {
     "name": "USDCoin",
@@ -29,7 +29,7 @@
     "symbol": "USDC",
     "decimals": 6,
     "chainId": "0x534e5f4d41494e",
-    "logoURI": "https://raw.githubusercontent.com/trustwallet/assets/master/blockchains/ethereum/assets/0xA0b86991c6218b36c1d19D4a2e9Eb0cE3606eB48/logo.png"
+    "logoURI": "https://static.jediswap.xyz/tokens-list/assets/USDC.png"
   },
   {
     "name": "Tether USD",
@@ -37,7 +37,7 @@
     "symbol": "USDT",
     "decimals": 6,
     "chainId": "0x534e5f4d41494e",
-    "logoURI": "https://raw.githubusercontent.com/trustwallet/assets/master/blockchains/ethereum/assets/0xdAC17F958D2ee523a2206206994597C13D831ec7/logo.png"
+    "logoURI": "https://static.jediswap.xyz/tokens-list/assets/USDT.png"
   },
   {
     "name": "Wrapped stETH",
@@ -45,7 +45,7 @@
     "symbol": "wstETH",
     "decimals": 18,
     "chainId": "0x534e5f4d41494e",
-    "logoURI": "https://raw.githubusercontent.com/trustwallet/assets/master/blockchains/ethereum/assets/0x5A98FcBEA516Cf06857215779Fd812CA3beF1B32/logo.png"
+    "logoURI": "https://static.jediswap.xyz/tokens-list/assets/wstETH.png"
   },
   {
     "name": "LORDS",
@@ -53,7 +53,7 @@
     "symbol": "LORDS",
     "decimals": 18,
     "chainId": "0x534e5f4d41494e",
-    "logoURI": "https://assets.coingecko.com/coins/images/22171/small/Frame_1.png"
+    "logoURI": "https://static.jediswap.xyz/tokens-list/assets/LORDS.png"
   },
   {
     "name": "LUSD",
@@ -61,14 +61,38 @@
     "symbol": "LUSD",
     "decimals": 18,
     "chainId": "0x534e5f4d41494e",
-    "logoURI": "https://raw.githubusercontent.com/trustwallet/assets/master/blockchains/ethereum/assets/0x5f98805A4E8be255a32880FDeC7F6728C6568bA0/logo.png"
+    "logoURI": "https://static.jediswap.xyz/tokens-list/assets/LUSD.png"
   },
   {
-    "name": "STRK",
+    "name": "Starknet",
     "address": "0x04718f5a0fc34cc1af16a1cdee98ffb20c31f5cd61d6ab07201858f4287c938d",
     "symbol": "STRK",
     "decimals": 18,
     "chainId": "0x534e5f4d41494e",
-    "logoURI": "https://assets.coingecko.com/coins/images/26433/standard/starknet.png"
+    "logoURI": "https://static.jediswap.xyz/tokens-list/assets/STRK.png"
+  },
+  {
+    "name": "Akamaru",
+    "address": "0x0137dfca7d96cdd526d13a63176454f35c691f55837497448fad352643cfe4d4",
+    "symbol": "AKU",
+    "decimals": 18,
+    "chainId": "0x534e5f4d41494e",
+    "logoURI": "https://static.jediswap.xyz/tokens-list/assets/AKU.png"
+  },
+  {
+    "name": "Stark Pepe",
+    "address": "0x1e0eee22c684fdf32babdd65e6bcca62a8ce2c23c8d5e68f3989595d26e1b4a",
+    "symbol": "SPEPE",
+    "decimals": 18,
+    "chainId": "0x534e5f4d41494e",
+    "logoURI": "https://static.jediswap.xyz/tokens-list/assets/SPEPE.png"
+  },
+  {
+    "name": "OWL",
+    "address": "0x039877a272619050ab8b0e3e0a19b58d076fc2ce84da1dc73b699590e629f2b8",
+    "symbol": "OWL",
+    "decimals": 18,
+    "chainId": "0x534e5f4d41494e",
+    "logoURI": "https://static.jediswap.xyz/tokens-list/assets/OWL.png"
   }
 ]
