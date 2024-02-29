@@ -94,5 +94,13 @@
     "decimals": 18,
     "chainId": "0x534e5f4d41494e",
     "logoURI": "https://static.jediswap.xyz/tokens-list/assets/OWL.png"
+  },
+  {
+    "name": "Pain au Lait",
+    "address": "0x49201f03a0f0a9e70e28dcd74cbf44931174dbe3cc4b2ff488898339959e559",
+    "symbol": "PAL",
+    "decimals": 18,
+    "chainId": "0x534e5f4d41494e",
+    "logoURI": "https://static.jediswap.xyz/tokens-list/assets/PAL.png"
   }
 ]
