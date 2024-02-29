@@ -81,7 +81,7 @@
   },
   {
     "name": "Stark Pepe",
-    "address": "0x1e0eee22c684fdf32babdd65e6bcca62a8ce2c23c8d5e68f3989595d26e1b4a",
+    "address": "0x01e0eee22c684fdf32babdd65e6bcca62a8ce2c23c8d5e68f3989595d26e1b4a",
     "symbol": "SPEPE",
     "decimals": 18,
     "chainId": "0x534e5f4d41494e",
