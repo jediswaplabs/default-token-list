@@ -1,5 +1,13 @@
 [
   {
+    "name": "Starknet",
+    "address": "0x04718f5a0fc34cc1af16a1cdee98ffb20c31f5cd61d6ab07201858f4287c938d",
+    "symbol": "STRK",
+    "decimals": 18,
+    "chainId": "0x534e5f5345504f4c4941",
+    "logoURI": "https://static.jediswap.xyz/tokens-list/assets/STRK.png"
+  },
+  {
     "name": "Wrapped BTC",
     "address": "0x00c6164da852d230360333d6ade3551ee3e48124c815704f51fa7f12d8287dcc",
     "symbol": "WBTC",
