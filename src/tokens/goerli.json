@@ -4,7 +4,7 @@
     "address": "0x00c6164da852d230360333d6ade3551ee3e48124c815704f51fa7f12d8287dcc",
     "symbol": "WBTC",
     "decimals": 8,
-    "chainId": "0x534e5f474f45524c49",
+    "chainId": "0x534e5f5345504f4c4941",
     "logoURI": "https://raw.githubusercontent.com/trustwallet/assets/master/blockchains/ethereum/assets/0x2260FAC5E5542a773Aa44fBCfeDf7C193bc2C599/logo.png"
   },
   {
@@ -12,7 +12,7 @@
     "address": "0x01f3b27e2f13d7d86f7f4c7dceb267290f158ac383803b22b712f7f9e58905ef",
     "symbol": "DAI",
     "decimals": 18,
-    "chainId": "0x534e5f474f45524c49",
+    "chainId": "0x534e5f5345504f4c4941",
     "logoURI": "https://raw.githubusercontent.com/trustwallet/assets/master/blockchains/ethereum/assets/0x6B175474E89094C44Da98b954EedeAC495271d0F/logo.png"
   },
   {
@@ -20,7 +20,7 @@
     "address": "0x03a909c1f2d1900d0c96626fac1bedf1e82b92110e5c529b05f9138951b93535",
     "symbol": "USDC",
     "decimals": 6,
-    "chainId": "0x534e5f474f45524c49",
+    "chainId": "0x534e5f5345504f4c4941",
     "logoURI": "https://raw.githubusercontent.com/trustwallet/assets/master/blockchains/ethereum/assets/0xA0b86991c6218b36c1d19D4a2e9Eb0cE3606eB48/logo.png"
   },
   {
@@ -28,7 +28,7 @@
     "address": "0x07d83b422a5fee99afaca50b6adf7de759af4a725f61cce747e06b6c09f7ab38",
     "symbol": "USDT",
     "decimals": 6,
-    "chainId": "0x534e5f474f45524c49",
+    "chainId": "0x534e5f5345504f4c4941",
     "logoURI": "https://raw.githubusercontent.com/trustwallet/assets/master/blockchains/ethereum/assets/0xdAC17F958D2ee523a2206206994597C13D831ec7/logo.png"
   }
 ]
