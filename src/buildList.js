@@ -2,10 +2,14 @@ const ciVersion = process.env.VERSION;
 const { version } = require("../package.json");
 const mainnet = require("./tokens/mainnet.json");
 const goerli = require("./tokens/goerli.json");
+const sepolia = require("./tokens/sepolia.json");
+
 const { getChecksumAddress } = require("starknet");
 
 module.exports = function buildList() {
-  const parsed = ciVersion ? ciVersion.match(/(\d+).(\d+).(\d+)/)?.[0]?.split(".") : version.split(".");
+  const parsed = ciVersion
+    ? ciVersion.match(/(\d+).(\d+).(\d+)/)?.[0]?.split(".")
+    : version.split(".");
   return {
     name: "Jediswap Labs List",
     timestamp: new Date().toISOString(),
@@ -17,9 +21,9 @@ module.exports = function buildList() {
     tags: {},
     logoURI: "ipfs://QmNa8mQkrNKp1WEEeGjFezDmDeodkWRevGFN8JCV7b4Xir",
     keywords: ["jediswap", "default"],
-    tokens: [...mainnet, ...goerli]
+    tokens: [...mainnet, ...goerli, ...sepolia]
       // parse address
-      .map(token => ({
+      .map((token) => ({
         ...token,
         address: getChecksumAddress(token.address)
       }))
