@@ -102,5 +102,13 @@
     "decimals": 18,
     "chainId": "0x534e5f4d41494e",
     "logoURI": "https://static.jediswap.xyz/tokens-list/assets/PAL.png"
+  },
+  {
+    "name": "Nostra",
+    "address": "0x00c530f2c0aa4c16a0806365b0898499fba372e5df7a7172dc6fe9ba777e8007",
+    "symbol": "NSTR",
+    "decimals": 18,
+    "chainId": "0x534e5f4d41494e",
+    "logoURI": "https://static.jediswap.xyz/tokens-list/assets/NSTR.png"
   }
 ]
