@@ -118,5 +118,13 @@
     "decimals": 6,
     "chainId": "0x534e5f4d41494e",
     "logoURI": "https://static.jediswap.xyz/tokens-list/assets/SWAY.png"
+  },
+  {
+    "name": "Paper",
+    "address": "0x0410466536b5ae074f7fea81e5533b8134a9fa08b3dd077dd9db08f64997d113",
+    "symbol": "PAPER",
+    "decimals": 18,
+    "chainId": "0x534e5f4d41494e",
+    "logoURI": "https://static.jediswap.xyz/tokens-list/assets/PAPER.png"
   }
 ]
