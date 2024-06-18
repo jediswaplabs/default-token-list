@@ -126,5 +126,13 @@
     "decimals": 18,
     "chainId": "0x534e5f4d41494e",
     "logoURI": "https://static.jediswap.xyz/tokens-list/assets/PAPER.png"
+  },
+  {
+    "name": "Rocket Pool ETH",
+    "address": "0x0319111a5037cbec2b3e638cc34a3474e2d2608299f3e62866e9cc683208c610",
+    "symbol": "rETH",
+    "decimals": 18,
+    "chainId": "0x534e5f4d41494e",
+    "logoURI": "https://static.jediswap.xyz/tokens-list/assets/RETH.png"
   }
 ]
