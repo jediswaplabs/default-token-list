@@ -1,6 +1,6 @@
 {
   "name": "@jediswap/default-token-list",
-  "version": "9.0.0",
+  "version": "9.0.1",
   "description": "◦ The Jediswap default token list",
   "main": "build/jediswap-default.tokenlist.json",
   "scripts": {
