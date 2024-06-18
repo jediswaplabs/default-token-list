@@ -110,5 +110,13 @@
     "decimals": 18,
     "chainId": "0x534e5f4d41494e",
     "logoURI": "https://static.jediswap.xyz/tokens-list/assets/NSTR.png"
+  },
+  {
+    "name": "Standard Weighted Adalian Yield",
+    "address": "0x004878d1148318a31829523ee9c6a5ee563af6cd87f90a30809e5b0d27db8a9b",
+    "symbol": "SWAY",
+    "decimals": 6,
+    "chainId": "0x534e5f4d41494e",
+    "logoURI": "https://static.jediswap.xyz/tokens-list/assets/SWAY.png"
   }
 ]
