@@ -142,5 +142,13 @@
     "decimals": 18,
     "chainId": "0x534e5f4d41494e",
     "logoURI": "https://static.jediswap.xyz/tokens-list/assets/CRM.png"
+  },
+  {
+    "name": "Ekubo Protocol",
+    "address": "0x075afe6402ad5a5c20dd25e10ec3b3986acaa647b77e4ae24b0cbc9a54a27a87",
+    "symbol": "EKUBO",
+    "decimals": 18,
+    "chainId": "0x534e5f4d41494e",
+    "logoURI": "https://static.jediswap.xyz/tokens-list/assets/EKUBO.png"
   }
 ]
