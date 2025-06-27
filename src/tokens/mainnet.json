@@ -8,6 +8,14 @@
     "logoURI": "https://static.jediswap.xyz/tokens-list/assets/WBTC.png"
   },
   {
+    "name": "Zero Proof Coin",
+    "address": "0x051ce72bf5c9705761a313bf7d5b8a7bd350d156aca6dbf5ada2119782964351",
+    "symbol": "ZPC",
+    "decimals": 18,
+    "chainId": "0x534e5f4d41494e",
+    "logoURI": "https://raw.githubusercontent.com/niclanleo/zpcoin/refs/heads/main/metadata/logos/mainnet/0x051ce72bf5c9705761a313bf7d5b8a7bd350d156aca6dbf5ada2119782964351.png"
+  },
+  {
     "name": "Dai Stablecoin (old)",
     "address": "0x00da114221cb83fa859dbdb4c44beeaa0bb37c7537ad5ae66fe5e0efd20e6eb3",
     "symbol": "DAIv0",
